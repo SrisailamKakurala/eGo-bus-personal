@@ -1,0 +1,22 @@
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+}
+
+
+.underline {
+    animation: slide 1s infinite ease-in-out; 
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+} 

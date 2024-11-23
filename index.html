@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5738f81d64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lottie Web CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+
+    <!-- Locomotive Scroll CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+
+    <!-- Locomotive Scroll JS -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+
+</head>
+
+<body class="bg-white m-0 p-0 box-border overflow-x-hidden scrollbar-none">
+    <div id="cursor" class="fixed blend-difference w-20 h-20 rounded-[50%] z-10">
+        <img id="bus-image" src="./assets/images/cursor.png" alt="Bus Cursor" class="w-full h-full ease-in">
+    </div>
+
+    <div id="main" class="h-auto ">
+
+        <!-- nav -->
+        <div
+            class="lg:h-[90px] h-[70px] w-full bg-[#fcd32d] flex justify-between py-3 lg:rounded-b-[60px] shadow-lg rounded-b-[50px] fixed lg:px-10 px-3 z-10">
+            <div class="flex flex-col items-center gap-2 ml-4">
+                <div class="flex gap-2 items-center cursor-pointer justify-center">
+                    <img src="./assets/images/cursor.png" class="lg:w-16 w-12 lg:h-16 h-12" alt="">
+                    <h1 class="lg:text-4xl text-2xl font-bold text-gray-800">Ego Bus</h1>
+                </div>
+            </div>
+            <div class="lg:w-16 w-12 lg:h-16 h-12 cursor-pointer ">
+                <i class="fa-solid fa-bars text-4xl text-gray-800 mt-2"></i>
+            </div>
+        </div>
+
+
+        <!-- hero -->
+        <div data-scroll data-scroll-section class=" h-[100vh] bg-white lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5">
+
+            <!---- Left Section -->
+            <div class="left flex flex-col justify-center lg:w-[50%] w-[100%] pt-8">
+                <!-- Title Section -->
+                <div
+                    class="title md:text-[10vw] lg:mx-0  mb-2 mx-auto text-6xl font-bold tracking-normal relative overflow-hidden relative top-0">
+                    <h1 class="gsap-text tracking-normal">e<span class="text-[#fcd32d]">GO</span> Bus</h1>
+                </div>
+
+                <!-- Motto Section -->
+                <div class="motto text-2xl font-medium tracking-wide mt-1 relative overflow-hidden">
+                    <p class="gsap-text lg:text-xl text-sm lg:mt-2 mb-3 lg:text-left text-center">
+                        e-GO Bus is an innovative app crafted for parents, students, and bus drivers to make school
+                        commutes safer, more efficient, and less stressful. e-GO Bus delivers peace of mind by ensuring
+                        every school bus journey is accounted for and easy to monitor.
+                    </p>
+
+                    <h2 class="gsap-text text-gray-600"><i>~ On Time, Peace Of Mind</i></h2>
+                </div>
+            </div>
+
+            <!---- Right Section -->
+            <div class="md:w-[50%] w-[100%] lg:h-auto h-[200px] relative flex justify-center items-center">
+                <div id="lottie-bg" class="w-[100%] h-[100%] absolute left-0 z-1"></div>
+            </div>
+        </div>
+
+
+        <!-- page 2 -->
+        <div data-scroll data-scroll-section data-scroll-speed="-.1"  class=" h-[100vh] bg-[#fcd32d] px-10 lg:rounded-t-[60px] rounded-t-[50px] lg:mt-7 z-20"></div>
+
+        <!-- page 3 -->
+        <div data-scroll data-scroll-section  class=" h-[100vh] bg-gray-800 px-10 lg:rounded-t-[60px] rounded-t-[50px] -mt-16 z-30"></div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
