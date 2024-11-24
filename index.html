@@ -2,191 +2,212 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/5738f81d64.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <!-- Lottie Web CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/5738f81d64.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <!-- Lottie Web CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 
-    <!-- Locomotive Scroll CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+  <!-- Locomotive Scroll CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"> -->
 
-    <!-- Locomotive Scroll JS -->
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+  <!-- Locomotive Scroll JS -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
 
 
 </head>
 
 <body class="bg-white m-0 p-0 box-border overflow-x-hidden scrollbar-none">
-    <div id="cursor" class="fixed blend-difference w-20 h-20 rounded-[50%] z-10">
-        <img id="bus-image" src="./assets/images/cursor.png" alt="Bus Cursor" class="w-full h-full ease-in">
+  <div id="cursor" class="fixed blend-difference w-20 h-20 rounded-[50%] z-10">
+    <img id="bus-image" src="./assets/images/cursor.png" alt="Bus Cursor" class="w-full h-full ease-in">
+  </div>
+
+  <div id="main" class="h-auto ">
+
+    <!-- nav -->
+    <div
+      class="lg:h-[90px] h-[70px] w-full bg-[#fcd32d] flex justify-between py-3 lg:rounded-b-[60px] shadow-lg rounded-b-[50px] fixed lg:px-10 px-3 z-[100]">
+      <div class="flex flex-col items-center gap-2 ml-4">
+        <div class="flex gap-2 items-center cursor-pointer justify-center">
+          <img src="./assets/images/cursor.png" class="lg:w-16 w-12 lg:h-16 h-12" alt="">
+          <h1 class="lg:text-4xl text-2xl font-bold text-gray-800 flex items-center">
+            eGO Bus
+          </h1>
+
+
+        </div>
+      </div>
+      <div class="lg:w-16 w-12 lg:h-16 h-12 cursor-pointer ">
+        <i class="fa-solid fa-bars text-4xl text-gray-800 mt-2"></i>
+      </div>
     </div>
 
-    <div id="main" class="h-auto ">
 
-        <!-- nav -->
+    <!-- hero -->
+    <div class=" h-[100vh] relative bg-white lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5 z-40">
+
+      <!---- Left Section -->
+      <div class="left flex flex-col justify-center lg:w-[50%] w-[100%] pt-8">
+        <!-- Title Section -->
         <div
-            class="lg:h-[90px] h-[70px] w-full bg-[#fcd32d] flex justify-between py-3 lg:rounded-b-[60px] shadow-lg rounded-b-[50px] fixed lg:px-10 px-3 z-10">
-            <div class="flex flex-col items-center gap-2 ml-4">
-                <div class="flex gap-2 items-center cursor-pointer justify-center">
-                    <img src="./assets/images/cursor.png" class="lg:w-16 w-12 lg:h-16 h-12" alt="">
-                    <h1 class="lg:text-4xl text-2xl font-bold text-gray-800 flex items-center">
-                        eGO Bus
-                      </h1>
-                      
-                      
-                </div>
-            </div>
-            <div class="lg:w-16 w-12 lg:h-16 h-12 cursor-pointer ">
-                <i class="fa-solid fa-bars text-4xl text-gray-800 mt-2"></i>
-            </div>
+          class="title md:text-[10vw] lg:mx-0  mb-2 mx-auto text-6xl font-bold tracking-normal relative overflow-hidden relative top-0">
+          <h1 class="gsap-text tracking-normal">e<span class="text-[#fcd32d]">GO</span> Bus</h1>
         </div>
 
+        <!-- Motto Section -->
+        <div class="motto text-2xl font-medium tracking-wide mt-1 relative overflow-hidden">
+          <p class="gsap-text lg:text-xl text-sm lg:mt-2 mb-3 lg:text-left text-center">
+            e-GO Bus is an innovative app crafted for parents, students, and bus drivers to make school
+            commutes safer, more efficient, and less stressful. e-GO Bus delivers peace of mind by ensuring
+            every school bus journey is accounted for and easy to monitor.
+          </p>
 
-        <!-- hero -->
-        <div data-scroll data-scroll-section class=" h-[100vh] bg-white lg:flex lg:px-24 px-6 lg:py-20 pt-28 text-gray-800 md:flex-row lg:gap-0 gap-5">
-
-            <!---- Left Section -->
-            <div class="left flex flex-col justify-center lg:w-[50%] w-[100%] pt-8">
-                <!-- Title Section -->
-                <div
-                    class="title md:text-[10vw] lg:mx-0  mb-2 mx-auto text-6xl font-bold tracking-normal relative overflow-hidden relative top-0">
-                    <h1 class="gsap-text tracking-normal">e<span class="text-[#fcd32d]">GO</span> Bus</h1>
-                </div>
-
-                <!-- Motto Section -->
-                <div class="motto text-2xl font-medium tracking-wide mt-1 relative overflow-hidden">
-                    <p class="gsap-text lg:text-xl text-sm lg:mt-2 mb-3 lg:text-left text-center">
-                        e-GO Bus is an innovative app crafted for parents, students, and bus drivers to make school
-                        commutes safer, more efficient, and less stressful. e-GO Bus delivers peace of mind by ensuring
-                        every school bus journey is accounted for and easy to monitor.
-                    </p>
-
-                    <h2 class="gsap-text text-gray-600"><i>~ On Time, Peace Of Mind</i></h2>
-                </div>
-            </div>
-
-            <!---- Right Section -->
-            <div class="md:w-[50%] w-[100%] lg:h-auto h-[200px] relative flex justify-center items-center">
-                <div id="lottie-bg" class="w-[100%] h-[100%] absolute left-0 z-1"></div>
-            </div>
+          <h2 class="gsap-text text-gray-600"><i>~ On Time, Peace Of Mind</i></h2>
         </div>
-        <div data-scroll data-scroll-section data-scroll-speed="-.1" class="sm:mt-16 min-h-[100vh] bg-[#fcd32d] px-4 py-4 lg:px-10 lg:rounded-t-[60px] rounded-t-[50px] lg:mt-7 z-20 flex flex-col lg:flex-row">
-            <!-- Left Section: What We Offer with Image -->
-            <div class="w-full lg:w-1/2 mt-4 items-center justify-center font-serif text-center lg:text-left" id="offerSection">
-              <h2 class="text-2xl font-semibold mb-4 pt-4">What We Offer</h2>
-              <img src="./assets/images/image.png" alt="School bus" class="w-full h-auto object-cover p-4">
-            </div>
-          
-            <!-- Right Section: Features -->
-            <div class="w-full lg:w-1/2 mt-4 overflow-y-auto" id="featuresSection">
-              <!-- Feature 1 -->
-              <h3 class="text-xl font-semibold mb-3 flex items-center">
-                <i class="fa-solid fa-location-pin mr-3"></i> Real-Time GPS Tracking
-              </h3>
-              <p class="px-10 text-sm mb-4">
-                Offer live tracking of school buses, allowing parents and school admins to monitor the exact location of buses in real-time.
-              </p>
-          
-              <!-- Feature 2 -->
-              <h3 class="text-xl font-semibold mb-3 flex items-center">
-                <i class="fa-solid fa-bell mr-2"></i> Instant Notifications
-              </h3>
-              <p class="px-10 text-sm mb-4">
-                Send alerts to parents about bus arrivals, delays, estimated times, and traffic updates, keeping them informed about their child's journey and potential delays.
-              </p>
-          
-              <!-- Feature 3 -->
-              <h3 class="text-xl font-semibold mb-3 flex items-center">
-                <i class="fa-solid fa-user-check mr-2"></i> Driver Attendance Tracking
-              </h3>
-              <p class="px-10 text-sm mb-4">
-                Enable drivers to mark attendance for each student upon boarding, helping parents and schools keep track of who is on board.
-              </p>
-          
-              <!-- Feature 4 -->
-              <h3 class="text-xl font-semibold mb-3 flex items-center">
-                <i class="fa-solid fa-phone-alt mr-2"></i> Parent Communication Hub
-              </h3>
-              <p class="px-10 text-sm mb-4">
-                Provide a way for parents to communicate directly with drivers or support teams in case of changes, emergencies, or reporting absences.
-              </p>
-          
-              <!-- Feature 5 -->
-              <h3 class="text-xl font-semibold mb-3 flex items-center">
-                <i class="fa-solid fa-box mr-2"></i> Forgotten Item Alerts
-              </h3>
-              <p class="px-10 text-sm mb-3">
-                Notify parents and students if any belongings are left on the bus, with options for retrieving them easily.
-              </p>
-          
-              <!-- Feature 6 -->
-              <h3 class="text-xl font-semibold mb-3 flex items-center">
-                <i class="fa-solid fa-exclamation-triangle mr-2"></i> SOS Alert for Drivers
-              </h3>
-              <p class="px-10 text-sm mb-4">
-                An emergency SOS button for drivers that instantly notifies school management of emergencies, allowing for quick response and coordination.
-              </p>
-            </div>
-          </div>
-          
-          
-          
-          
-         <!-- Second Page -->
-<div data-scroll data-scroll-section class="h-auto min-h-[90vh] bg-gray-800 px-6 sm:px-10 lg:rounded-t-[60px] rounded-t-[50px] z-20 flex flex-col text-white" id="howItWorks">
-    <h2 class="text-4xl sm:text-5xl lg:text-7xl mt-6 pt-10 pb-4 font-semibold mb-6 text-center">
-      How It Works
-    </h2>
-    <p class="text-center px-4 sm:px-6 lg:px-0 max-w-lg text-lg sm:text-xl lg:text-2xl mb-8">
-      Discover how our eGO Bus system provides tailored features and tools for parents and school management, ensuring a safe, efficient, and transparent transportation experience.
-    </p>
-    <p class="text-center px-4 sm:px-6 lg:px-0 max-w-lg text-lg sm:text-xl lg:text-2xl mb-12">
-      Learn about our innovative solutions designed for enhanced security, real-time tracking, and easy communication.
-    </p>
-    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
-      <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-200 focus:outline-none">
-        Features for Parents
-      </button>
-      <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-200 focus:outline-none">
-        Features for School Management
-      </button>
-    </div>
-  </div>
-  
-  <!-- Third Page -->
-  <div data-scroll data-scroll-section class="h-auto min-h-[90vh] bg-gray-900 px-6 sm:px-10 lg:rounded-t-[60px] rounded-t-[50px] z-10 flex flex-col text-white items-center justify-center" id="thirdPage">
-    <h2 class="text-4xl sm:text-5xl lg:text-7xl mt-6 pt-10 pb-4 font-semibold mb-6 text-center">
-      Why Choose Us
-    </h2>
-    <p class="text-center px-4 sm:px-6 lg:px-0 max-w-lg text-lg sm:text-xl lg:text-2xl mb-8">
-      Our eGO Bus system offers unmatched safety, convenience, and transparency for school transportation, giving parents and school management peace of mind.
-    </p>
-    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
-      <button class="bg-gradient-to-r from-blue-400 to-blue-600 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-blue-500 hover:to-blue-700 transition-all duration-200 focus:outline-none">
-        Explore Features
-      </button>
-      <button class="bg-gradient-to-r from-blue-400 to-blue-600 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-blue-500 hover:to-blue-700 transition-all duration-200 focus:outline-none">
-        Contact Us
-      </button>
-    </div>
-  </div>
-  
-          
+      </div>
+
+      <!---- Right Section -->
+      <div class=" md:w-[50%] w-[100%] lg:h-auto h-[200px] relative flex justify-center items-center">
+        <div id="lottie-bg" class="gsap-text w-[100%] h-[100%] absolute left-0 z-1"></div>
+      </div>
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
+    <!-- What We Offer -->
+    <div
+      class="relative sm:mt-8 h-auto bg-[#fcd32d] px-4 pt-3 pb-16 lg:px-10 lg:rounded-t-[60px] rounded-t-[50px] lg:mt-7 z-30 flex flex-col lg:flex-row lg:gap-3 gap-1">
+      <!-- Left Section: What We Offer with Image -->
+      <div class="w-full lg:w-1/2 mt-4 items-center justify-center font-serif text-center lg:text-left"
+        id="offerSection">
+        <h2 class="text-2xl font-bold mb-4 pt-4">What We Offer</h2>
+        <hr>
+        <img src="./assets/images/image.png" alt="School bus" class="w-full h-auto object-cover p-4">
+      </div>
+
+      <!-- Right Section: Features -->
+      <div class="w-full lg:w-1/2 lg:mt-16 mt-3 px-5 flex flex-col justify-center  overflow-y-auto" id="featuresSection">
+        <!-- Feature 1 -->
+        <h3 class="text-xl font-semibold mb-3 flex items-center">
+          <i class="fa-solid fa-location-pin mr-3"></i> Real-Time GPS Tracking
+        </h3>
+        <p class="px-10 text-sm mb-4">
+          Offer live tracking of school buses, allowing parents and school admins to monitor the exact location of buses
+          in real-time.
+        </p>
+
+        <!-- Feature 2 -->
+        <h3 class="text-xl font-semibold flex items-center">
+          <i class="fa-solid fa-bell mr-2"></i> Instant Notifications
+        </h3>
+        <p class="px-10 text-sm mb-4">
+          Send alerts to parents about bus arrivals, delays, estimated times, and traffic updates, keeping them informed
+          about their child's journey and potential delays.
+        </p>
+
+        <!-- Feature 3 -->
+        <h3 class="text-xl font-semibold mb-3 flex items-center">
+          <i class="fa-solid fa-user-check mr-2"></i> Driver Attendance Tracking
+        </h3>
+        <p class="px-10 text-sm mb-4">
+          Enable drivers to mark attendance for each student upon boarding, helping parents and schools keep track of
+          who is on board.
+        </p>
+
+        <!-- Feature 4 -->
+        <h3 class="text-xl font-semibold mb-3 flex items-center">
+          <i class="fa-solid fa-phone-alt mr-2"></i> Parent Communication Hub
+        </h3>
+        <p class="px-10 text-sm mb-4">
+          Provide a way for parents to communicate directly with drivers or support teams in case of changes,
+          emergencies, or reporting absences.
+        </p>
+
+        <!-- Feature 5 -->
+        <h3 class="text-xl font-semibold mb-3 flex items-center">
+          <i class="fa-solid fa-box mr-2"></i> Forgotten Item Alerts
+        </h3>
+        <p class="px-10 text-sm mb-3">
+          Notify parents and students if any belongings are left on the bus, with options for retrieving them easily.
+        </p>
+
+        <!-- Feature 6 -->
+        <h3 class="text-xl font-semibold mb-3 flex items-center">
+          <i class="fa-solid fa-exclamation-triangle mr-2"></i> SOS Alert for Drivers
+        </h3>
+        <p class="px-10 text-sm mb-4">
+          An emergency SOS button for drivers that instantly notifies school management of emergencies, allowing for
+          quick response and coordination.
+        </p>
+      </div>
+    </div>
+
+
+
+
+    <!-- Second Page -->
+    <div
+      class="h-auto relative min-h-[90vh] bg-gray-800 px-6 sm:px-10 lg:rounded-t-[60px] rounded-t-[50px] flex flex-col text-white z-50 -mt-12 pb-20 flex justify-center items-center"
+      id="howItWorks">
+      <h2 class="text-4xl sm:text-5xl lg:text-7xl mt-6 pt-10 pb-4 font-semibold mb-6 text-center">
+        How It Works ?
+      </h2>
+      <p class="text-center px-4 sm:px-6 lg:px-0 max-w-lg text-lg sm:text-xl lg:text-2xl mb-8">
+        Discover how our eGO Bus system provides tailored features and tools for parents and school management, ensuring
+        a safe, efficient, and transparent transportation experience.
+      </p>
+      <p class="text-center px-4 sm:px-6 lg:px-0 max-w-lg text-lg sm:text-xl lg:text-2xl mb-12">
+        Learn about our innovative solutions designed for enhanced security, real-time tracking, and easy communication.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+        <button
+          class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-200 focus:outline-none">
+          Features for Parents
+        </button>
+        <button
+          class="bg-gradient-to-r from-yellow-400 to-yellow-500 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-yellow-500 hover:to-yellow-700 transition-all duration-200 focus:outline-none">
+          Features for School Management
+        </button>
+      </div>
+    </div>
+
+    <!-- Third Page -->
+    <div
+      class="h-auto -mt-14 min-h-[90vh] bg-gray-900 px-6 sm:px-10 lg:rounded-t-[60px] rounded-t-[50px]  flex flex-col text-white items-center justify-center relative z-50"
+      id="thirdPage">
+      <h2 class="text-4xl sm:text-5xl lg:text-7xl mt-6 pt-10 pb-4 font-semibold mb-6 text-center">
+        Why Choose Us ?
+      </h2>
+      <p class="text-center px-4 sm:px-6 lg:px-0 max-w-lg text-lg sm:text-xl lg:text-2xl mb-8">
+        Our eGO Bus system offers unmatched safety, convenience, and transparency for school transportation, giving
+        parents and school management peace of mind.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+        <button
+          class="bg-gradient-to-r from-blue-400 to-blue-600 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-blue-500 hover:to-blue-700 transition-all duration-200 focus:outline-none">
+          Explore Features
+        </button>
+        <button
+          class="bg-gradient-to-r from-blue-400 to-blue-600 text-white text-base sm:text-lg lg:text-xl py-3 px-6 sm:px-8 rounded-lg hover:from-blue-500 hover:to-blue-700 transition-all duration-200 focus:outline-none">
+          Contact Us
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
