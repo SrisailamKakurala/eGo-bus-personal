@@ -20,3 +20,73 @@
         transform: translateX(0);
     }
 } 
+
+.carousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem; /* Space between cards */
+    padding-bottom: 1rem;
+  }
+  
+  .card {
+    position: relative;
+    aspect-ratio: 3 / 4; /* Keeps the aspect ratio consistent */
+    overflow: hidden;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    scroll-snap-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Responsive Adjustments */
+  @media (min-width: 768px) {
+    .card {
+      width: 220px; /* Slightly larger cards on medium screens */
+      height: 330px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      width: 250px; /* Larger cards on larger screens */
+      height: 375px;
+    }
+  }
+  @media (min-width: 1280px) {
+    .card {
+      width: 300px; /* Larger cards on extra-large screens */
+      height: 450px; /* Adjust the height proportionally */
+    }
+  }
+  @media (min-width: 1280px) {
+    .card {
+      width: 300px; /* Larger cards on extra-large screens */
+      height: 450px; /* Adjust the height proportionally */
+    }
+  }
+    
+  
